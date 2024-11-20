@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import {Greeting} from './Greeting';
+import {LoginStatus} from './LoginStatus';
+import {Counter} from './Counter';
+import NameList from './ListName';
+import {ToggleText} from './ToggleText';
+import {TaskList} from './TaskList';
+import Timer from './Timer';
+import TabSwitcher from './TabSwitcher';
+import LikeCounter from './LikeCounter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        {/*<Greeting name="Ivan" />*/}
+        {/*<LoginStatus isLoggedIn={false}/>*/}
+        {/*<Counter/>*/}
+        {/*<NameList names={["ivan", 'neIvan']} />*/}
+        {/*<ToggleText/>*/}
+        {/*<TaskList initialTasks={['Buy groceries', 'Read a book']} />*/}
+        {/*<Timer/>*/}
+        {/*<TabSwitcher/>*/}
+        <LikeCounter/>
+      </div>
   );
 }
 
